@@ -145,12 +145,33 @@
 						margin-bottom: 0px;" class="">Watch Live</h2>
 					</div>
 				</div>
-				<div class="text-center containers">
 
-					<img class="responsive-iframe" src="images/poster.png" >
-
-
-
+					<script type='text/javascript' class="responsive-iframe " src='../../../cdn.jwplayer.com/libraries/cKY5REJu.js'></script><br/>
+                <script type="text/javascript ">
+                    jwplayer.key = "Bc0mi3cZYJX9qF0RbAfEb3uQmbJYjO9LPpTZdOw5frI=";
+                </script>
+                </p>
+                <div id='MediaPlayerMiniPlayer'>Loading&#8230;</div>
+                <p>
+                    <script type='text/javascript'>
+                        jwplayer('MediaPlayerMiniPlayer').setup({
+                            sources: [{
+                                file: " https://13.234.113.249:80/hls/index.m3u8 "
+                            }, {
+                                file: "rtmp://13.234.113.249/hls "
+                            }],
+                            rtmp: {
+                                bufferlength: 3,
+                            },
+                            'autostart': 'false',
+                            'width': '100%',
+                            'aspectratio': '16:9',
+                            'height': '270',
+                            'fallback': false,
+                            'androidhls': true,
+                            'primary': 'html5'
+                        });
+                    </script>
 					</div>
 			</div>
 			<p align="center"> <a href='https://www.symptoma.it/'>Vhall.live</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=60c3dc5b7b9cab7aa717155f177800ecc94253ce'></script>
